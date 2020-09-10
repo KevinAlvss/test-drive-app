@@ -1,0 +1,37 @@
+-- tela inicial
+
+consultar carros disponiveis
+
+-- escolher o carro 
+-- -- escolher o horário do test drive
+
+consultar agendamentos
+
+-- tela login
+-- tela de cadastro (funcionario (somente admin cadastra))
+
+tela de aprovação
+
+
+** cabeçalho fixo
+** imagem textinho // textinho imagem (flexbox)
+
+$ y $ tb_agendamento
+	id_agendamento
+	id_funcionario
+
+	nm_cliente
+	ds_email
+	
+	nm_carro
+
+	dt_test_drive
+	ds_status
+
+$ x $ tb_funcionario
+	id_funcionario
+	nm_funcionario
+	ds_email
+	ds_senha
+	bt_admin
+	
