@@ -1,0 +1,44 @@
+1) Como o login decide se vai para o MenuFunc ou MenuCliente
+
+Na tabela de login terá um campo "ds_permissao", que terá três estados, sendo eles "cliente", "funcionario" e "admin". A API vai fazer a verificação do estado desse campo e retornar ao front o estado atual e o id_login levando assim para o MenuCliente caso tenha o estado "cliente", e para o MenuFunc caso tenha o estado "funcionario" ou "admin".
+
+2) A tela de cadastrar permite cadastrar todo tipo de usuário? Explique
+
+Utilizamos uma regra de sistema que diz que os funcionarios já estão cadastrados na tabela de funcionario (de mesmo modo que acontece na tabela de carro), sendo assim o sistema só cadastra clientes.
+
+3) A tela de consultar pode consultar todos agendamentos?
+
+Não, será filtrado pelo id_cliente para haver somente os registro do próprio cliente.
+
+  -> Ela deve ter filtros?
+	A base da consulta vai ser o filtro por id_cliente dos registros.
+	Terá um filtro de pesquisa por nome, CNH e CPF.
+
+  -> Como você garante a segurança da privacidade das informações
+	<!-- Criptografia de Dados e nas telas será carregado o id_login junto, como um token de acesso -->
+
+4) Quais campos devem ter na tela de agendamento?
+
+:: Cliente ::
+
+Nome do Carro (combobox)
+Modelo do Carro (combobox)
+Data/Horário
+
+:: Funcionário ::
+
+Nome do Carro (combobox)
+Modelo do Carro (combobox)
+Data/Horário
+
+Nome do Cliente
+CPF do Cliente
+CNH do Cliente
+
+Email do Cliente
+Senha do Cliente
+
+
+  -> Como garantir que o agendamento seja do usuário
+	Botão de confirmação (e cancelamento) de agendamento via e-mail
+	:: Token de Acesso --> pelo id_login ::
