@@ -1,0 +1,14 @@
+{
+    "workbench.colorCustomizations": {
+        "[Visual Studio Dark]": {
+            "editor.background": "#160025",
+            "activityBar.background": "#190822",
+            "titleBar.activeBackground": "#190822",
+            "titleBar.activeForeground": "#FFFFFF"
+        },
+        "activityBar.background": "#390C7E",
+        "titleBar.activeBackground": "#5011B1",
+        "titleBar.activeForeground": "#FBF9FE"
+    },
+    "git.ignoreLimitWarning": true
+}
